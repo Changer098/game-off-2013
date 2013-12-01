@@ -5,11 +5,20 @@
   <title>Mission Space</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
   <script src="http://static.freewebs.getclicky.com/43205224.js" type="text/javascript"></script>
-  <script type="text/javascript">
+  <script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
 		<!--
 			var config = {
 				width: 960, 
@@ -55,15 +64,6 @@
 				});
 				u.initPlugin(jQuery("#unityPlayer")[0], "build.unity3d");
 			});
-		-->
-		</script>
-        <script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
-		<script type="text/javascript">
-		<!--
-		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
-		if (document.location.protocol == 'https:')
-			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
-		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
 		-->
 		</script>
   <style type="text/css">
@@ -273,7 +273,7 @@ ul#menu li a:hover
 
 #content2
 { text-align: left;
-  width: 950px;
+  width: 100%;
   padding: 25px 0 5px 25px;
   margin: 0;}
 
@@ -380,6 +380,12 @@ ul#menu li a:hover
   margin: 0;
   font: normal 140% 'Yanone Kaffeesatz', sans-serif;}
  
+ .unity {
+    position: relative;
+    right: 40px;
+    width: 100%;
+ }
+ 
 table
 { margin: 10px 0 30px 0;}
 
@@ -465,13 +471,13 @@ table tr td
   <div id="main">
     <div id="header">
       <div id="logo">
-        <h1>Changer098<a href="#"></a></h1>
+        <h1>Changer098 : Mission Space</a></h1>
       </div>
       <div id="menubar">
         <ul id="menu">
           <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="current"><a href="http://changer098.webs.com/youtube/info.html">Github</a></li>
-          <li></li>
+          <li class="current"><a href="https://github.com/Changer098/game-off-2013">Github</a></li>
+          <li><a href="http://unity3d.com/">Unity</a></li>
           <li></li>
           <li></li>
           <li></li>
@@ -479,14 +485,22 @@ table tr td
       </div>
     </div>
 <div id="site_content">
-  <div id="content2">
-        <!-- insert the page content here -->
-        <h1>Mission Space</h1>
-		<iframe src="build.html" width="970" height="700" frameborder="0"></iframe>
-    </div>
+			<div id="unityPlayer">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+				<div class="broken">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+						<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
   <div id="footer">
       <p><a href="http://unity3d.com/">Unity</a> | Copyright &copy; simplestyle_7 | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
   </div>
   </div>
-<!-- --><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script></body>
+<!-- --><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script>
+<script src="http://static.freewebs.getclicky.com/43205224.js" type="text/javascript"></script> <noscript><img alt="Clicky" src="http://in.freewebs.getclicky.com/43205224-fwdb1.gif" /></noscript> </body>
 </html>
